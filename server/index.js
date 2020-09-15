@@ -5,7 +5,7 @@ const port=process.env.PORT || 3000
 
 const app=express()
 
-const clientBuildPath = path.join(__dirname, '..','/client/public');
+const clientBuildPath = path.join(__dirname, '..','client/build');
 console.log(clientBuildPath)
 
 app.use(express.json());
@@ -17,7 +17,7 @@ app.use(express.urlencoded({
 app.use(express.static(clientBuildPath))
 
 app.get("/",(request, response)=>{
-	response.sendFile(path.join(clientBuildPath,'/index.html'))
+	response.sendFile(path.join(__dirname,'..','/client/build/index.html'))
 })
 
 app.get("/greet",(req,res)=>{
