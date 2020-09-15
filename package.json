@@ -1,0 +1,20 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client:build":"cd client && npm run build",
+    "start": "cd server && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arwalokhandwala/fullstack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arwalokhandwala/fullstack/issues"
+  },
+  "homepage": "https://github.com/arwalokhandwala/fullstack#readme"
+}
