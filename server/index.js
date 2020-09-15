@@ -5,7 +5,7 @@ const port=process.env.PORT || 3000
 
 const app=express()
 
-const clientBuildPath = path.join(__dirname, '../client/build');
+const clientBuildPath = path.join(__dirname, '..','/client/public');
 console.log(clientBuildPath)
 
 app.use(express.json());
