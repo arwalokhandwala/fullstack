@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client:build":"cd client && npm run build",
-    "start": "cd server && node index.js"
+    "client:build":"cd ./client && npm run build",
+    "start": "cd ./server && node index.js"
   },
   "repository": {
     "type": "git",
